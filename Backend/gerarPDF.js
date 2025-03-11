@@ -1,12 +1,21 @@
-function gerarPDF(dados) {
-    const PDFDocument = require('pdfkit');
-    const fs = require('fs');
+const PDFDocument = require('pdfkit');
+const fs = require('fs');
+const path = require('path');
 
-    // Substituir '/' por '_'
+function gerarPDF(dados) {
     const nomeArquivo = `relatorio_${dados.cnpj.replace(/\//g, '_')}.pdf`;
+    const pastaRelatorios = path.join(__dirname, 'Relatórios');
+
+    // Criar a pasta "Relatórios" se não existir
+    if (!fs.existsSync(pastaRelatorios)) {
+        fs.mkdirSync(pastaRelatorios, { recursive: true });
+    }
+
+    // Caminho completo do arquivo
+    const caminhoArquivo = path.join(pastaRelatorios, nomeArquivo);
 
     const doc = new PDFDocument();
-    doc.pipe(fs.createWriteStream(nomeArquivo));
+    doc.pipe(fs.createWriteStream(caminhoArquivo));
 
     doc.fontSize(18).text('Relatório OSINT - CNPJ', { align: 'center' });
     doc.moveDown();
@@ -26,7 +35,7 @@ function gerarPDF(dados) {
     });
 
     doc.end();
-    console.log(`Relatório salvo como: ${nomeArquivo}`);
+    console.log(`Relatório salvo em: ${caminhoArquivo}`);
 }
 
 module.exports = gerarPDF;
