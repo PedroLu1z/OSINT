@@ -5,50 +5,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSINT</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color: #0D1117; color: #C9D1D9;">
     <main>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Buscou Achou</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Quem Somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Buscar Domínio</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="color: #3DDC97;" href="#buscouAchou">BuscouAchou</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: #3DDC97;" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUs" style="color: #3DDC97;">Sobre-nos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#assinaturas" style="color: #3DDC97;">Assinaturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contate-nos" class="nav-link" style="color: #3DDC97;">Contate-nos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <section>
-            <div class="container">
-                <h1>Bem vindos ao Buscou Achou.</h1>
-                <p>Este é um site de busca de domínios e as informações relacionadas ao dominio pesquisado</p>
+
+        <section id="home">
+            <div class="container text-center mt-5">
+                <h1>Informações Empresariais com Segurança e Precisão</h1>
+                <p style="text-align: justify;">Em um ambiente digital, informações confiáveis são essenciais para
+                    proteger seu negócio. O CNPJ Insights oferece uma plataforma segura e
+                    eficiente para empresas de cybersecurity acessarem dados públicos de
+                    CNPJs com rapidez e precisão.</p>
+                <p style="text-align: justify;"><b>Consulta Transparente:</b> Acesse dados oficiais como razão social,
+                    CNPJ, sócios e mais</p>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <h2 class="text-center mt-5">Digite o CNPJ que deseje buscar informações</h2>
-                <form action="">
-                    <div class="input-group mb-3">
-                        <input type="text" id="cnpjInput" class="form-control" placeholder="00.000.000/0000-00">
-                        <button class="btn btn-primary" onclick="consultarCNPJ()" style="margin-left: 10px;">Buscar</button>
-                        <pre id="resultado">
+        <section id="aboutUs">
+            <div class="container mt-5">
+                <h2>Porque existimos?</h2>
+                <p>No BuscouAchou, acreditamos que informação segura e acessível é a chave para decisões estratégicas.
+                    Desenvolvemos uma plataforma dedicada a empresas de cybersecurity, oferecendo acesso rápido, legal e
+                    transparente a informações públicas de CNPJs.</p>
+                <p>Nosso compromisso é fornecer dados precisos para apoiar investigações, auditorias e processos de
+                    segurança, sempre em conformidade com as normas vigentes.</p>
+                <p>🔐 Segurança, precisão e transparência – porque proteger seu negócio começa com informações
+                    confiáveis.</p>
+            </div>
+        </section>
 
-                        </pre>
+        <section id="buscouAchou">
+            <div class="container">
+                <form>
+                    <div class="mb-3 text-center mt-5">
+                        <h2>Busque Empresas</h2>
+                        <input type="email" class="form-control" id="" placeholder="Digite o CNPJ aqui">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Buscar</button>
                     </div>
                 </form>
             </div>
         </section>
+
+        <section id="assinaturas">
+            <!-- Card de Assinatura -->
+            <div class="container">
+
+                <!-- Card 1 - Basic -->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">💼 Basic</h5>
+                        <ul>
+                            <li>
+                                <p>Acesso a consultas básicas de CNPJs</p>
+                            </li>
+                            <li>
+                                <p>Relatórios Simples</p>
+                            </li>
+                            <li>
+                                <p>Ideal para pequenas demandas</p>
+                            </li>
+                        </ul>
+                        <p>R$79,90</p>
+                        <button class="btn">
+                            <a href="">Assinar</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 - Premium -->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">🚀 Premium</h5>
+                        <ul>
+                            <li>
+                                <p>Consultas avançadas de CNPJs</p>
+                            </li>
+                            <li>
+                                <p>Relatórios detalhados com mais informações</p>
+                            </li>
+                            <li>
+                                <p>Recomendado para análises profundas</p>
+                            </li>
+                        </ul>
+                        <p>R$149,90</p>
+                        <button class="btn">
+                            <a href="">Assinar</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 - Unlimited -->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">🌐 Unlimited</h5>
+                        <ul>
+                            <li>
+                                <p>Consultas ilimitas de CNPJs</p>
+                            </li>
+                            <li>
+                                <p>Relatórios completos e personalizados</p>
+                            </li>
+                            <li>
+                                <p>Perfeito para grandes volumes e monitoramento contínuo</p>
+                            </li>
+                        </ul>
+                        <p>R$350,00</p>
+                        <button class="btn"><a href="">Assinar</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contate-nos">
+            <div class="container">
+                <h2 style="text-align: center;">Contate-nos</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Título do Assunto</label>
+                        <input type="text" class="form-control" id="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Assunto</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="card-footer container text-center">
+                &copy; Criado por BuscouAchou e todos os direitos reservados
+            </div>
+        </footer>
     </main>
 
 
