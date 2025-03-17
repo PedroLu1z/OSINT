@@ -72,7 +72,7 @@
                         <input type="email" class="form-control" id="" placeholder="Digite o CNPJ aqui">
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Buscar</button>
+                        <button type="submit" class="btn btn-primary w-100">Buscar</button>
                     </div>
                 </form>
             </div>
@@ -81,68 +81,72 @@
         <section id="assinaturas">
             <!-- Card de Assinatura -->
             <div class="container">
-
-                <!-- Card 1 - Basic -->
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">💼 Basic</h5>
-                        <ul>
-                            <li>
-                                <p>Acesso a consultas básicas de CNPJs</p>
-                            </li>
-                            <li>
-                                <p>Relatórios Simples</p>
-                            </li>
-                            <li>
-                                <p>Ideal para pequenas demandas</p>
-                            </li>
-                        </ul>
-                        <p>R$79,90</p>
-                        <button class="btn">
-                            <a href="">Assinar</a>
-                        </button>
+                <div class="d-flex justify-content-between mt-5">
+                    <!-- Card 1 - Basic -->
+                    <div class="card" style="background-color: #161B22; width: 18rem; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">💼 Basic</h5>
+                            <ul>
+                                <li>
+                                    <p>Acesso a consultas básicas de CNPJs</p>
+                                </li>
+                                <li>
+                                    <p>Relatórios Simples</p>
+                                </li>
+                                <li>
+                                    <p>Ideal para pequenas demandas</p>
+                                </li>
+                            </ul>
+                            <p>R$79,90</p>
+                            <button class="btn btn-primary">
+                                <a href="" style="color: #fff; text-decoration: none;">Assinar</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Card 2 - Premium -->
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">🚀 Premium</h5>
-                        <ul>
-                            <li>
-                                <p>Consultas avançadas de CNPJs</p>
-                            </li>
-                            <li>
-                                <p>Relatórios detalhados com mais informações</p>
-                            </li>
-                            <li>
-                                <p>Recomendado para análises profundas</p>
-                            </li>
-                        </ul>
-                        <p>R$149,90</p>
-                        <button class="btn">
-                            <a href="">Assinar</a>
-                        </button>
+                    <!-- Card 2 - Premium -->
+                    <div class="card custom-card" style="background-color: #161B22; width: 18rem; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">🚀 Premium</h5>
+                            <ul>
+                                <li>
+                                    <p>Consultas avançadas de CNPJs</p>
+                                </li>
+                                <li>
+                                    <p>Relatórios detalhados com mais informações</p>
+                                </li>
+                                <li>
+                                    <p>Recomendado para análises profundas</p>
+                                </li>
+                            </ul>
+                            <p>R$149,90</p>
+                            <div>
+                                <button class="btn btn-primary">
+                                    <a href="" style="color: #fff; text-decoration: none;">Assinar</a>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Card 3 - Unlimited -->
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">🌐 Unlimited</h5>
-                        <ul>
-                            <li>
-                                <p>Consultas ilimitas de CNPJs</p>
-                            </li>
-                            <li>
-                                <p>Relatórios completos e personalizados</p>
-                            </li>
-                            <li>
-                                <p>Perfeito para grandes volumes e monitoramento contínuo</p>
-                            </li>
-                        </ul>
-                        <p>R$350,00</p>
-                        <button class="btn"><a href="">Assinar</a></button>
+                    <!-- Card 3 - Unlimited -->
+                    <div class="card" style="background-color: #161B22; width: 18rem; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">🌐 Unlimited</h5>
+                            <ul>
+                                <li>
+                                    <p>Consultas ilimitas de CNPJs</p>
+                                </li>
+                                <li>
+                                    <p>Relatórios completos e personalizados</p>
+                                </li>
+                                <li>
+                                    <p>Perfeito para grandes volumes e monitoramento contínuo</p>
+                                </li>
+                            </ul>
+                            <p>R$350,00</p>
+                            <button class="btn btn-primary"><a href=""
+                                    style="color: #fff; text-decoration: none;">Assinar</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,7 +154,7 @@
 
         <section id="contate-nos">
             <div class="container">
-                <h2 style="text-align: center;">Contate-nos</h2>
+                <h2 style="text-align: center; margin-top: 20px;">Contate-nos</h2>
                 <form>
                     <div class="mb-3">
                         <label for="" class="form-label">Email</label>
@@ -162,9 +166,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Assunto</label>
-                        <textarea name="" id=""></textarea>
+                        <textarea class="form-control" name="" id=""></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="d-flex justify-content-center mb-4">
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </div>
                 </form>
             </div>
         </section>
